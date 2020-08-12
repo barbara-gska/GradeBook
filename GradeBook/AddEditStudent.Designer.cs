@@ -46,7 +46,7 @@
             this.tbForeignLang = new System.Windows.Forms.TextBox();
             this.rtbComments = new System.Windows.Forms.RichTextBox();
             this.lbComments = new System.Windows.Forms.Label();
-            this.btnComfirm = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.cbExtra = new System.Windows.Forms.CheckBox();
             this.lbExtra = new System.Windows.Forms.Label();
@@ -200,15 +200,15 @@
             this.lbComments.TabIndex = 17;
             this.lbComments.Text = "Uwagi:";
             // 
-            // btnComfirm
+            // btnConfirm
             // 
-            this.btnComfirm.Location = new System.Drawing.Point(320, 452);
-            this.btnComfirm.Name = "btnComfirm";
-            this.btnComfirm.Size = new System.Drawing.Size(82, 28);
-            this.btnComfirm.TabIndex = 18;
-            this.btnComfirm.Text = "Zatwierdź";
-            this.btnComfirm.UseVisualStyleBackColor = true;
-            this.btnComfirm.Click += new System.EventHandler(this.btnComfirm_Click);
+            this.btnConfirm.Location = new System.Drawing.Point(320, 452);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(82, 28);
+            this.btnConfirm.TabIndex = 18;
+            this.btnConfirm.Text = "Zatwierdź";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnComfirm_Click);
             // 
             // btnCancel
             // 
@@ -273,7 +273,7 @@
             this.Controls.Add(this.lbExtra);
             this.Controls.Add(this.cbExtra);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnComfirm);
+            this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lbComments);
             this.Controls.Add(this.rtbComments);
             this.Controls.Add(this.lbForeignLang);
@@ -322,7 +322,7 @@
         private System.Windows.Forms.TextBox tbForeignLang;
         private System.Windows.Forms.RichTextBox rtbComments;
         private System.Windows.Forms.Label lbComments;
-        private System.Windows.Forms.Button btnComfirm;
+        private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.CheckBox cbExtra;
         private System.Windows.Forms.Label lbExtra;

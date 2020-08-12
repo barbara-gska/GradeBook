@@ -59,7 +59,7 @@ namespace GradeBook
                 cbGroupId.Text = _student.GroupId;
         }
 
-        private void btnComfirm_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
             var students = _fileHelper.DeserializeFromFile();
 
