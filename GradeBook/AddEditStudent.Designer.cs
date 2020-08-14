@@ -208,7 +208,7 @@
             this.btnConfirm.TabIndex = 18;
             this.btnConfirm.Text = "Zatwierdź";
             this.btnConfirm.UseVisualStyleBackColor = true;
-            this.btnConfirm.Click += new System.EventHandler(this.btnComfirm_Click);
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
             // 
