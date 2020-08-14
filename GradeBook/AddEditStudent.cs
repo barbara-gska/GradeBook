@@ -46,17 +46,17 @@ namespace GradeBook
 
         private void FillTextBoxes()
         { 
-                tbId.Text = _student.Id.ToString();
-                tbFirstName.Text = _student.FirstName;
-                tbLastName.Text = _student.LastName;
-                tbMath.Text = _student.Math;
-                tbTechnology.Text = _student.Technology;
-                tbPhysics.Text = _student.Physics;
-                tbPolishLang.Text = _student.PolishLang;
-                tbForeignLang.Text = _student.ForeignLang;
-                rtbComments.Text = _student.Comments;
-                cbExtra.Checked = _student.Extracurricullum;
-                cbGroupId.Text = _student.GroupId;
+            tbId.Text = _student.Id.ToString();
+            tbFirstName.Text = _student.FirstName;
+            tbLastName.Text = _student.LastName;
+            tbMath.Text = _student.Math;
+            tbTechnology.Text = _student.Technology;
+            tbPhysics.Text = _student.Physics;
+            tbPolishLang.Text = _student.PolishLang;
+            tbForeignLang.Text = _student.ForeignLang;
+            rtbComments.Text = _student.Comments;
+            cbExtra.Checked = _student.Extracurricullum;
+            cbGroupId.Text = _student.GroupId;
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
