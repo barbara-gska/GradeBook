@@ -11,7 +11,7 @@ namespace GradeBook
         private FileHelper<List<Student>> _fileHelper = 
             new GradeBook.FileHelper<List<Student>>(Program.FilePath);
 
-        private List<string> groups = new List<string>() { "Wszystkie", "1A", "1B", "2A", "2B", "3A", "3B" };
+        private List<string> _groups;
 
         public bool IsMaximize
         {
@@ -29,7 +29,7 @@ namespace GradeBook
         {
             InitializeComponent();
 
-            cbGroups.DataSource = groups;
+            InitComboboxGroups();
 
             RefreshBook();
 
@@ -39,6 +39,13 @@ namespace GradeBook
                 WindowState = FormWindowState.Maximized;
 
 
+        }
+
+        private void InitComboboxGroups()
+        {
+            _groups = new List<string>() { "Wszystkie", "1A", "1B", "2A", "2B", "3A", "3B" };
+
+            cbGroups.DataSource = _groups;
         }
 
         private void RefreshBook()
