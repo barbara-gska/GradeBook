@@ -16,18 +16,27 @@ namespace GradeBook
 
         private int _studentId;
         private Student _student;
+        private List<string> _groups;
 
         public AddEditStudent(int id = 0)
         {
             InitializeComponent();
             _studentId = id;
+            InitComboboxGroups();
 
             GetStudentData();
             tbFirstName.Select();
         }
 
+        private void InitComboboxGroups()
+        {
+            _groups = new List<string>() { "brak", "1A", "1B", "2A", "2B", "3A", "3B" };
 
-      
+            cbGroupId.DataSource = _groups;
+        }
+
+
+
         private void GetStudentData()
         {
             if (_studentId != 0)
@@ -68,17 +77,22 @@ namespace GradeBook
             else
                 AssignIdToNewStudent(students);
 
-            AddNewStudentToList(students);
+            if(cbGroupId.SelectedItem.ToString() != "brak")
+            {
+                AddNewStudentToList(students);
 
-            _fileHelper.SerializeToFile(students);
+                _fileHelper.SerializeToFile(students);
 
-
-            Close();
+                Close();
+            }
+            else
+                MessageBox.Show("Proszę wybrać grupę ucznia.");
         }
 
 
         private void AddNewStudentToList(List<Student> students)
         {
+
             var student = new Student
             {
                 Id = _studentId,
@@ -93,6 +107,7 @@ namespace GradeBook
                 Extracurricullum = cbExtra.Checked,
                 GroupId = cbGroupId.SelectedItem.ToString()
             };
+
 
             students.Add(student);
 
